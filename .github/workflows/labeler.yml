@@ -11,6 +11,6 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/lebeler@4
+      - uses: actions/lebeler@v4
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
