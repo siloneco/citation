@@ -20,8 +20,8 @@ citationは[ApplicationCommands](https://discord.com/developers/docs/interaction
 
 ## Environment variables
 
-| value | description                              | required |
-| ---- |------------------------------------------|
-| `CITATION_BOT_TOKEN` | citationが接続するDiscord Botのトークン ([発行方法]()) | `true` |
-| `CLIENT_ID` | Commandを登録するDiscord BotのユーザーID | `false` |
-| `GUILD_ID` | Commandを登録したいサーバーのギルドID | `false` |
+| value                | description                              | required |
+|----------------------|------------------------------------------|----------|
+| `CITATION_BOT_TOKEN` | citationが接続するDiscord Botのトークン ([発行方法]()) | `true`   |
+| `CLIENT_ID`          | Commandを登録するDiscord BotのユーザーID           | `false`  |
+| `GUILD_ID`           | Commandを登録したいサーバーのギルドID                  | `false`  |
