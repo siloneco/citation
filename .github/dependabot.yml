@@ -1,0 +1,35 @@
+version: 1
+updates:
+  - package-ecosystem: "gradle"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - "m2en"
+    target-branch: main
+    commit-message:
+      prefix: chore
+    labels:
+      - "🔮dependabot: update(gradle)"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - "m2en"
+    target-branch: main
+    commit-message:
+      prefix: chore
+    labels:
+      - "🔮dependabot: update(gh-actions)"
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - "m2en"
+    target-branch: main
+    commit-message:
+      prefix: chore
+    labels:
+      - "🔮dependabot: update(docker)"
