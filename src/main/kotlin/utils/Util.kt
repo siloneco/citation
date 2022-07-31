@@ -1,5 +1,7 @@
 package utils
 
+import io.github.cdimascio.dotenv.dotenv
+
 object Util {
 
     /**
@@ -9,6 +11,7 @@ object Util {
      * @return Environment variable (or default value)
      */
     fun getEnv(value: String): String {
-        return System.getenv(value) ?: error("次の環境変数が正しく設定されていません -> $value")
+        val dotenv = dotenv()
+        return dotenv.get(value) ?: error("次の環境変数が正しく設定されていません -> $value")
     }
 }
