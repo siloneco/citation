@@ -1,16 +1,20 @@
-@file:JvmName("Mainkt")
-
 import dev.kord.core.Kord
 import dev.kord.core.event.gateway.ReadyEvent
+import dev.kord.core.event.message.MessageCreateEvent
 import dev.kord.core.on
-import utils.Util
+import io.github.cdimascio.dotenv.dotenv
 
 suspend fun main() {
-    val kord = Kord(Util.getEnv("CITATION_BOT_TOKEN"))
+    val dotenv = dotenv()
+    val kord = Kord(dotenv.get("CITATION_BOT_TOKEN"))
     kord.login()
 
     kord.on<ReadyEvent> {
         println("Ready!")
+    }
+
+    kord.on<MessageCreateEvent> {
+        if(message.author?.isBot == true && message.getGuildOrNull() == null) return@on
     }
 }
 
