@@ -19,7 +19,7 @@ suspend fun main() {
     }
 
     kord.on<MessageCreateEvent> {
-        if(message.author?.isBot == true && message.getGuildOrNull() == null) return@on
+        if(message.author?.isBot == true || message.getGuildOrNull() == null) return@on
     }
 
     kord.login() {
