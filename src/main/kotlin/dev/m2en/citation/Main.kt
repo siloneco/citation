@@ -7,6 +7,7 @@ import dev.kord.core.on
 import dev.kord.gateway.Intent
 import dev.kord.gateway.Intents
 import dev.kord.gateway.PrivilegedIntent
+import dev.m2en.citation.command.InteractionCommand
 import io.github.cdimascio.dotenv.dotenv
 
 @OptIn(PrivilegedIntent::class)
@@ -19,7 +20,8 @@ suspend fun main() {
     }
 
     kord.on<MessageCreateEvent> {
-        if(message.author?.isBot == true && message.getGuildOrNull() == null) return@on
+        if(message.author?.isBot == true || message.getGuildOrNull() == null) return@on
+        InteractionCommand.
     }
 
     kord.login() {
