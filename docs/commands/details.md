@@ -1,22 +1,8 @@
 # Commands Details
 
-## `!command set`
+## `!interaction`
 
 Application Commandsを登録します。
-
-サーバーの管理権限を持ったユーザーのみが実行できます。
-
-## `!command remove`
-
-Application Commandsを削除します。
-
-サーバーの管理権限を持ったユーザーのみが実行できます。
-
-## `!command update`
-
-Application Commandsを更新します。
-
-このコマンドは [Releases](https://github.com/m2en/citation/releases) で案内が行われた場合のみ必要です。
 
 サーバーの管理権限を持ったユーザーのみが実行できます。
 
