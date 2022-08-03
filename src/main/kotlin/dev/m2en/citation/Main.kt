@@ -21,7 +21,6 @@ suspend fun main() {
 
     kord.on<MessageCreateEvent> {
         if(message.author?.isBot == true || message.getGuildOrNull() == null) return@on
-        InteractionCommand.
     }
 
     kord.login() {
