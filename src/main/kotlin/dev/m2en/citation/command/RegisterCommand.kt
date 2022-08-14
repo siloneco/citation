@@ -56,10 +56,5 @@ object RegisterCommand: CommandInterface {
             channel("target-channel", "デバックするメッセージがあるチャンネルを指定してください")
         }
 
-        // debug (message application command)
-        kord.createGuildMessageCommand(
-            Snowflake(dotenv.get("GUILD_ID")),
-            "デバック(メッセージ)"
-        )
     }
 }
