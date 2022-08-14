@@ -9,7 +9,7 @@ import dev.kord.rest.builder.interaction.channel
 import dev.kord.rest.builder.interaction.string
 import io.github.cdimascio.dotenv.dotenv
 
-object RegisterCommand: CommandInterface {
+object RegisterCommand: MessageCommandInterface {
 
     private val dotenv = dotenv()
 

@@ -7,7 +7,7 @@ import dev.kord.core.on
 import dev.kord.gateway.Intent
 import dev.kord.gateway.Intents
 import dev.kord.gateway.PrivilegedIntent
-import dev.m2en.citation.command.CommandInterface
+import dev.m2en.citation.command.MessageCommandInterface
 import dev.m2en.citation.command.RegisterCommand
 import io.github.cdimascio.dotenv.dotenv
 
@@ -15,7 +15,7 @@ import io.github.cdimascio.dotenv.dotenv
 suspend fun main() {
     val dotenv = dotenv()
     val kord = Kord(dotenv.get("CITATION_BOT_TOKEN"))
-    val messageMap = mutableMapOf<String, CommandInterface>()
+    val messageMap = mutableMapOf<String, MessageCommandInterface>()
     messageMap.put("!register", RegisterCommand)
 
     kord.on<ReadyEvent> {
