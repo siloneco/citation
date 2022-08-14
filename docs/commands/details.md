@@ -1,6 +1,6 @@
 # Commands Details
 
-## `!interaction`
+## `!register`
 
 Application Commandsを登録します。
 

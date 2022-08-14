@@ -36,15 +36,7 @@ docker pull ghcr.io/m2en/citation:latest
 
 次にApplicationCommandsを登録します。
 
-次の環境変数を登録し、 `!command set` を実行します。
+次の環境変数を登録し、 `!register` を実行します。
 
 - `CLIENT_ID`
 - `GUILD_ID`
-
-### コマンドの削除
-
-不要なコマンドを削除する際は `!command remove` を実行します。
-
-### コマンドのアップデート
-
-コマンドに関する変更が出た際は `!command update` を実行します。
