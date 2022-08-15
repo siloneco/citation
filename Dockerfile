@@ -5,7 +5,7 @@ COPY . .
 RUN chmod +x ./gradlew
 RUN ./gradlew --no-daemon shadowJar
 
-FROM openjdk:17-oracle
+FROM openjdk:17-oracle as Run
 
 RUN mkdir /app
 COPY --from=Build build/libs/citation.jar /app/citation.jar
