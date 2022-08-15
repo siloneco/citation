@@ -16,6 +16,8 @@ docker pull ghcr.io/m2en/citation:<任意のバージョン>
 
 利用可能なイメージは [packages](https://github.com/m2en/citation/pkgs/container/citation) ページで確認することが出来ます。 (できるかぎり、最新のイメージを使用してください。)
 
+- [利用可能なイメージ(バージョン一覧)](https://github.com/m2en/citation/pkgs/container/citation/versions)
+
 ## Register Commands
 
 citationは[Application Commands](https://discord.com/developers/docs/interactions/application-commands)をサポートしています。
