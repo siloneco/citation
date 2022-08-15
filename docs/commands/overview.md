@@ -5,4 +5,3 @@
 | `!interaction`                 | ApplicationCommands を登録する | Message     |
 | `/debug <messageId> [channel]` | メッセージをデバッグする              | Interaction |
 | `/help`                        | ヘルプを表示する                  | Interaction |
-| `/ping`                        | レイテンシを表示する                | Interaction |

@@ -19,7 +19,3 @@ Application Commandsを登録します。
 ## `/help`
 
 ヘルプを表示します。
-
-## `/ping`
-
-レイテンシを表示します。
