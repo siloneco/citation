@@ -41,7 +41,7 @@ docker pull ghcr.io/m2en/citation:<任意のバージョン>
 ## `.env` を用意する
 
 ```shell
-# 設定例(.env.example)をコピーする
+# 設定例(.env.example)をコピーする (ソースをクローンして、自前でビルドする場合)
 cp .env.example .env
 ```
 
