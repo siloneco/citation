@@ -31,7 +31,7 @@ suspend fun main() {
     }
 
     /**
-     * Kordが接続しているクライアントユーザー(Bot)がさんか
+     * Kordが接続しているクライアントユーザー(Bot)が参加しているギルドに対してメッセージが送信されたら発火するイベント
      */
     kord.on<MessageCreateEvent> {
         if(message.author?.isBot == true || message.getGuildOrNull() == null) return@on
