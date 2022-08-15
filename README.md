@@ -7,8 +7,14 @@
 citationはDockerをサポートしています。次のコマンドを使用することでビルド済みイメージを利用することができます。
 
 ```shell
+# 最新版
 docker pull ghcr.io/m2en/citation:latest
+
+# バージョン指定
+docker pull ghcr.io/m2en/citation:<任意のバージョン>
 ```
+
+利用可能なイメージは [packages](https://github.com/m2en/citation/pkgs/container/citation) ページで確認することが出来ます。 (できるかぎり、最新のイメージを使用してください。)
 
 ## Register Commands
 
