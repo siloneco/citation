@@ -43,10 +43,9 @@ object RegisterCommand: MessageCommandInterface {
             "debug",
             "メッセージをデバックします"
         ) {
-            string("target-message", "メッセージIDを指定してください") {
+            string("target", "メッセージIDを指定してください") {
                 required = true
             }
-            channel("target-channel", "デバックするメッセージがあるチャンネルを指定してください")
         }
     }
 }
