@@ -38,7 +38,40 @@ docker pull ghcr.io/m2en/citation:<任意のバージョン>
     - `Read Messages / View Channels`
 10. 生成されたURLからBotを招待する
 
-### コマンドの登録
+## `.env` を用意する
+
+```shell
+# 設定例(.env.example)をコピーする
+cp .env.example .env
+```
+
+```shell
+# nano
+nano .env
+
+# vimmerのお前
+vim .emv
+```
+
+以下の値を設定してください。(それぞれの値については[こちらから詳細](https://github.com/m2en/citation#environment-variables)を確認してください。)
+
+```dotenv
+CITATION_BOT_TOKEN=
+CLIENT_ID=
+GUILD_ID=
+```
+
+## Botの起動
+
+以下のコマンドを実行します。
+
+```shell
+docker run --env-file .env citation
+```
+
+`citation is ready!` と表示されたら起動に成功しています、お疲れ様でした。
+
+## コマンドの登録
 
 次にApplicationCommandsを登録します。
 
