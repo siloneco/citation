@@ -4,7 +4,6 @@ import dev.kord.core.behavior.interaction.response.DeferredEphemeralMessageInter
 import dev.kord.core.behavior.interaction.response.respond
 import dev.kord.core.entity.interaction.Interaction
 import dev.kord.rest.builder.message.EmbedBuilder
-import dev.kord.rest.builder.message.modify.embed
 
 object HelpCommand: InteractionCommandInterface {
 
