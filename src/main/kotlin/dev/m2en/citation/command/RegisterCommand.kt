@@ -37,13 +37,6 @@ object RegisterCommand: MessageCommandInterface {
             "ヘルプを表示します"
         )
 
-        // /ping
-        kord.createGuildChatInputCommand(
-            Snowflake(dotenv.get("GUILD_ID")),
-            "ping",
-            "レイテンシを表示します"
-        )
-
         // /debug <messageId> [channelId]
         kord.createGuildChatInputCommand(
             Snowflake(dotenv.get("GUILD_ID")),
@@ -55,6 +48,5 @@ object RegisterCommand: MessageCommandInterface {
             }
             channel("target-channel", "デバックするメッセージがあるチャンネルを指定してください")
         }
-
     }
 }
