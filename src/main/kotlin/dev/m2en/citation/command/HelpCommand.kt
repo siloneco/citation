@@ -2,12 +2,12 @@ package dev.m2en.citation.command
 
 import dev.kord.core.behavior.interaction.response.DeferredEphemeralMessageInteractionResponseBehavior
 import dev.kord.core.behavior.interaction.response.respond
-import dev.kord.core.entity.interaction.Interaction
+import dev.kord.core.entity.interaction.GuildChatInputCommandInteraction
 import dev.kord.rest.builder.message.EmbedBuilder
 
 object HelpCommand: InteractionCommandInterface {
 
-    override suspend fun onCommand(interaction: Interaction, responseBehavior: DeferredEphemeralMessageInteractionResponseBehavior) {
+    override suspend fun onCommand(interaction: GuildChatInputCommandInteraction, responseBehavior: DeferredEphemeralMessageInteractionResponseBehavior) {
         val embed = EmbedBuilder()
         embed.title = "ヘルプ"
         embed.url = "https://github.com/m2en/citation"
