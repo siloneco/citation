@@ -27,4 +27,19 @@ tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
 }
 
+tasks {
+    compileKotlin {
+        kotlinOptions {
+            freeCompilerArgs = listOf("-Xopt-in=kotlin.RequiresOptIn")
+        }
+    }
+
+    shadowJar {
+        manifest {
+            attributes("Main-Class" to "dev.m2en.citation.MainKt")
+        }
+
+        archiveFileName.set("citation.jar")
+    }
+}
 

@@ -1,3 +1,5 @@
+@file:JvmName("MainKt")
+
 package dev.m2en.citation
 
 import dev.kord.core.Kord
