@@ -1,8 +1,9 @@
 # citation docs
 
-- [Getting Started](getting-started.md)
-- [Command Overview](./commands/overview.md)
-- [Command Details](./commands/details.md)
+- [Getting Started](getting-started.md) - citationのセットアップ方法
+- [Command Overview](./commands/overview.md) - コマンドのオーバービュー
+- [Command Details](./commands/details.md) - コマンドの詳細
+- [Command Permission](./commands/permission.md) - コマンドの権限を設定する
 
 ----
 
